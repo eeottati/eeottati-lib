@@ -1,6 +1,6 @@
 {
   "name": "eeottati-lib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Select eeottati.com library files",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -10,8 +10,16 @@
     "build-storybook": "build-storybook",
     "build-lib": "rollup -c"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eeottati/eeottati-lib.git"
+  },
   "author": "Eric Ottati",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eeottati/eeottati-lib/issues"
+  },
+  "homepage": "https://github.com/eeottati/eeottati-lib#readme",
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-react": "^7.14.5",

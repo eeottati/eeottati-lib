@@ -17,8 +17,6 @@ export const Basic = () => (
         padding: '40px'
       }}
     >
-      <div>
-        <p>Mock content</p>
-      </div>
+      <p>Mock content</p>
     </PixelEffectContainer>
 );

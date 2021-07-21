@@ -14,6 +14,7 @@ export const FadeIn = ({ children, ElementType, duration, delay, opacity, ...pro
   const [show, setShow] = useState(false);
 
   useEffect(() => {
+    // Trigger fade-in w/delay
     setTimeout(() => setShow(true), delay);
   });
 

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const styleStart = { opacity: 0, transition: 'opacity 0.7s ease' };
+// Styles
 const styleOnClick = { cursor: 'pointer' };
+const styleStart = (duration) => ({ opacity: 0, transition: `opacity ${duration} ease` });
 const styleLoaded = (opacity) => ({ opacity });
 const styleBorder = (border) => ({ border });
 const styleBorderRadius = (borderRadius) => ({ borderRadius });
@@ -11,6 +12,7 @@ const styleBorderRadius = (borderRadius) => ({ borderRadius });
  * LazyImage
  * @param  {} {src
  * @param  {} alt
+ * @param  {} duration
  * @param  {} opacity
  * @param  {} border
  * @param  {} borderRadius
@@ -19,11 +21,11 @@ const styleBorderRadius = (borderRadius) => ({ borderRadius });
  * @param  {} onClickCallback
  * @param  {} ...props}
  */
-export const LazyImage = ({ src, alt, opacity, border, borderRadius, onLoadCallback, onErrorCallback, onClickCallback, ...props }) => {
+export const LazyImage = ({ src, alt, duration, opacity, border, borderRadius, onLoadCallback, onErrorCallback, onClickCallback, ...props }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   /**
-   * Set loaded, trigger callback
+   * Set as loaded, trigger callback
    */
   const onLoadHandler = () => {
     setIsLoaded(true);
@@ -35,7 +37,7 @@ export const LazyImage = ({ src, alt, opacity, border, borderRadius, onLoadCallb
       src={src}
       alt={alt}
       style={{
-        ...styleStart,
+        ...styleStart(duration),
         ...styleBorder(border),
         ...styleBorderRadius(borderRadius),
         ...(onClickCallback ? styleOnClick : {}),
@@ -52,6 +54,7 @@ export const LazyImage = ({ src, alt, opacity, border, borderRadius, onLoadCallb
 LazyImage.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
+  duration: PropTypes.string,
   opacity: PropTypes.number,
   border: PropTypes.string,
   borderRadius: PropTypes.oneOfType(PropTypes.string, PropTypes.number),
@@ -61,6 +64,7 @@ LazyImage.propTypes = {
 };
 
 LazyImage.defaultProps = {
+  duration: '0.7s',
   opacity: 1,
   border: 'none',
   borderRadius: 0,

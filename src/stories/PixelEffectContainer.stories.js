@@ -3,7 +3,7 @@ import React from 'react';
 import PixelEffectContainer from '../components/pixel/components/pixel-effect-container/PixelEffectContainer';
 
 export default {
-  title: 'Pixel/PixelEffectContainer',
+  title: 'ui/pixel/PixelEffectContainer',
   component: PixelEffectContainer,
 }
 

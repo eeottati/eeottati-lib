@@ -1,5 +1,5 @@
 // Display Components
-export { FadeIn } from './components/display/components/fade-in/FadeIn';
+export { FadeIn, ExpandCollapse } from './components/display/components';
 
 // Image Components
 export { LazyImage } from './components/image/components/lazy-image/LazyImage';

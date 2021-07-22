@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-// Styles
+// Styling
 const styleOnClick = { cursor: 'pointer' };
 const styleStart = (duration) => ({ opacity: 0, transition: `opacity ${duration} ease` });
 const styleLoaded = (opacity) => ({ opacity });
@@ -57,7 +57,7 @@ LazyImage.propTypes = {
   duration: PropTypes.string,
   opacity: PropTypes.number,
   border: PropTypes.string,
-  borderRadius: PropTypes.oneOfType(PropTypes.string, PropTypes.number),
+  borderRadius: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onLoadCallback: PropTypes.func,
   onErrorCallback: PropTypes.func,
   onClickCallback: PropTypes.func,

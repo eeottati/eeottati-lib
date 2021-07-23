@@ -1,6 +1,6 @@
 {
   "name": "eeottati-lib",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Select eeottati.com library files",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

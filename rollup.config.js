@@ -29,7 +29,7 @@ export default [
       }),
       external(),
       resolve(),
-      terser(),
+      //terser(),
     ],
     external: ['react', 'react-dom', 'react-router-dom', 'prop-types', 'classnames'],
   },

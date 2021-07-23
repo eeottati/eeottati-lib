@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import styles from './NavLink.module.css';
 
 // Styling
-const getClasses = (props) => classnames(styles.container, props?.className || '');
+const getClasses = (props = {}) => classnames(styles.container, props.className || '');
 
 // Render methods
 const routerLink = (props) => <Link {...props} className={getClasses(props)} />;

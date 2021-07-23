@@ -15,4 +15,4 @@ export { useIntersection } from './hooks';
 export { usePixelEffect, useResizeCanvasToContainer } from './components/pixel/hooks';
 
 // Utilities
-export { rand } from './utils';
+export { isEven, rand } from './utils';

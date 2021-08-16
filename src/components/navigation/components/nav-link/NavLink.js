@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Link } from 'react-router-dom';
 
-import styles from './NavLink.module.css';
+import styles from './NavLink.module.scss';
 
 // Styling
 const getClasses = (props = {}) => classnames(styles.container, props.className || '');

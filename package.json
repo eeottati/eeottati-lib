@@ -1,6 +1,6 @@
 {
   "name": "eeottati-lib",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Select eeottati.com library files",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -23,16 +23,18 @@
   },
   "homepage": "https://github.com/eeottati/eeottati-lib#readme",
   "devDependencies": {
-    "@babel/core": "^7.14.8",
+    "@babel/core": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
     "@rollup/plugin-node-resolve": "^13.0.2",
     "@storybook/addon-actions": "^6.3.4",
     "@storybook/addon-essentials": "^6.3.4",
     "@storybook/addon-links": "^6.3.4",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^6.3.4",
+    "@storybook/react": "^6.3.7",
     "babel-loader": "^8.2.2",
+    "babel-preset-react-app": "^10.0.0",
     "classnames": "^2.3.1",
+    "node-sass": "^6.0.1",
     "postcss": "^8.3.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -42,11 +44,13 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-terser": "^7.0.2",
+    "sass-loader": "^10",
     "storybook-css-modules-preset": "^1.1.1"
   },
   "peerDependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0"
   },
   "dependencies": {}
 }

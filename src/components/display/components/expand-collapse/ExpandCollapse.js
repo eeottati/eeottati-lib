@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './ExpandCollapse.module.css';
+import styles from './ExpandCollapse.module.scss';
 
 /**
  * ExpandCollapse

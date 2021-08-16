@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 import { usePixelEffect } from '../../hooks/usePixelEffect';
 
-import styles from './PixelEffectContainer.module.css';
+import styles from './PixelEffectContainer.module.scss';
 
 /**
  * PixelEffectContainer

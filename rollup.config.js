@@ -22,6 +22,8 @@ export default [
       postcss({
         plugins: [],
         minimize: true,
+        modules: true,
+        use: ['sass'],
       }),
       babel({
         exclude: 'node_modules/**',
